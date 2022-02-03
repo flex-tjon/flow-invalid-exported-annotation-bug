@@ -8,4 +8,16 @@ const AnEnumDefinition = {
   three: null,
 };
 
-export const ENUM_DEFINITION: EnumType<typeof AnEnumDefinition> = Enum(AnEnumDefinition);
+const ENUM_DEFINITION: EnumType<typeof AnEnumDefinition> = Enum(AnEnumDefinition);
+
+export const data = {
+  all: [
+    ENUM_DEFINITION.one,
+    ENUM_DEFINITION.two,
+    ENUM_DEFINITION.three,
+  ],
+  some: [
+    ENUM_DEFINITION.two,
+    ENUM_DEFINITION.three,
+  ],
+};
