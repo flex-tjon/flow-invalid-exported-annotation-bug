@@ -8,7 +8,7 @@ A minimal reproduction of some errors noticed with Flow in version 0.171.0 and w
 3. Open the project in VS Code, ensure the Flow Language Support extension is installed (v1.9.2)
 
 ## Steps to reproduce
-1. Open `Component.jsx` in the text editor. Notice that three Flow errors are reported in the Problems tab below
+1. Open `Component.jsx` in the text editor. Notice that four Flow errors are reported in the Problems tab below
 2. Then, open `helpers.js` in the text editor
 
 ## What is expected to happen
@@ -17,7 +17,7 @@ Errors of the form:
 Cannot use property one on $ObjMap [1] in an export position. Please provide an (alternative) annotation for property
 one [2]. [invalid-exported-annotation]
 ```
-should appear highlighted on lines 15, 16, and 17 in `helpers.js`
+should appear highlighted on lines 18, 19, and 20 in `helpers.js`, and one `prop-missing` error should appear on line 14.
 
 ## What happens instead
-The errors actually disappear when the file is opened, and only reappear when the file is closed.
+The `invalid-exported-annotation` errors actually disappear when the file is opened, and only reappear when the file is closed. The `prop-missing` error does correctly remain as expected.
