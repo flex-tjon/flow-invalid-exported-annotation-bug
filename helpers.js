@@ -10,6 +10,9 @@ const AnEnumDefinition = {
 
 const ENUM_DEFINITION: EnumType<typeof AnEnumDefinition> = Enum(AnEnumDefinition);
 
+const b = 30;
+b.concat(30);
+
 export const data = {
   all: [
     ENUM_DEFINITION.one,
