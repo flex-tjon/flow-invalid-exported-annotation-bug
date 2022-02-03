@@ -1,0 +1,16 @@
+{
+  "devDependencies": {
+    "flow-bin": "^0.171.0",
+    "flow-typed": "^3.6.1"
+  },
+  "dependencies": {
+    "invariant": "^2.2.4",
+    "keymirror": "^0.1.1"
+  },
+  "name": "flow-invalid-exported-annotation-bug",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Jon Taratuta-Titus <jonathan.titus@flexport.com>",
+  "license": "MIT",
+  "private": true
+}
